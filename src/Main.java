@@ -1,6 +1,7 @@
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.util.Random;
 
 /**
  * Created by Gabriel Jadderson on 26-02-2017.
@@ -13,6 +14,8 @@ public class Main
 
     static Color color_WHITE = new Color(255, 255, 255);
     static Color color_RED = new Color(255, 0, 0);
+    static Color color_GREEN = new Color(0, 0, 255);
+    static Color color_BLACK = new Color(0, 0, 0);
 
     public static void main(String[] args) throws Exception
     {
@@ -31,8 +34,8 @@ public class Main
             }
         }
 
-        Sphere sphere = new Sphere(new Vector3(W / 2, H / 2, 50), 250);
-        Sphere light = new Sphere(new Vector3(W / 2, 0, 49), 50);
+        Sphere sphere = new Sphere(new Vector3(W / 2, H / 2, 15), 200);
+        Sphere light = new Sphere(new Vector3(W / 2, 1000, 1000), 200);
 
 
         for (int y = 0; y < H; y++)
@@ -40,9 +43,9 @@ public class Main
             for (int x = 0; x < W; x++)
             {
 
-                Ray ray = new Ray(new Vector3(x, y, 0), new Vector3(0, 0, 1));
+                Ray ray = new Ray(new Vector3(x, y, 0), new Vector3(0, 0, 0));
 
-                double t = 405;
+                double t = 401;
 
                 if (sphere.intersects(ray, t))
                 {
@@ -53,8 +56,15 @@ public class Main
 
                     float multiplier = 1f;
                     pixel_colors[y][x] = Color.add(color_RED, Color.multiply(color_WHITE, dt * multiplier));
-                }
 
+                    //Random random = new Random();
+                    //pixel_colors[y][x] = random.nextInt(2) == random.nextInt(2) ? color_WHITE : color_RED;
+                } else
+                {
+                    Random random = new Random();
+                    pixel_colors[y][x] = random.nextInt(2) == random.nextInt(2) ? color_GREEN : color_BLACK;
+
+                }
                 int[] rbg = new int[3];
                 rbg[0] = (int) pixel_colors[y][x].getR();
                 rbg[1] = (int) pixel_colors[y][x].getG();

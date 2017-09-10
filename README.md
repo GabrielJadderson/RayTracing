@@ -1,5 +1,5 @@
 ### Raytracing Engine written for SDU's first year project with 4 other team mates.
-RayTracing engine written in Java.
+Written in pure Java.
 
 Rapport available here:
 [Rapport.pdf](https://github.com/GabrielJadderson/RayTracing/blob/master/Rapport.pdf)

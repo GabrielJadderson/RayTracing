@@ -16,10 +16,9 @@ Uses the Apache commons math library
 
 
 ### Pictures
-![alt tag](https://raw.githubusercontent.com/GabrielJadderson/RayTracing/master/output/InvincibleApatheticOlingo.png)
+![alt tag](https://raw.githubusercontent.com/GabrielJadderson/RayTracing/master/output/AxiomaticDaffyTuna.png)
 ![alt tag](https://raw.githubusercontent.com/GabrielJadderson/RayTracing/master/output/NebulousEarsplittingSnipe.png)
 ![alt tag](https://raw.githubusercontent.com/GabrielJadderson/RayTracing/master/output/InvincibleIndustriousTuna.png)
 ![alt tag](https://raw.githubusercontent.com/GabrielJadderson/RayTracing/master/output/EarthyOmniscientRooster.png)
 ![alt tag](https://raw.githubusercontent.com/GabrielJadderson/RayTracing/master/output/DemonicVivaciousRoundworm.png)
-![alt tag](https://raw.githubusercontent.com/GabrielJadderson/RayTracing/master/output/AxiomaticDaffyTuna.png)
-
+![alt tag](https://raw.githubusercontent.com/GabrielJadderson/RayTracing/master/output/InvincibleApatheticOlingo.png)

@@ -1,7 +1,10 @@
 ### Raytracing engine
 RayTracing engine written in Java.
-Features:
 
+Rapport available here:
+[Rapport.pdf](https://github.com/GabrielJadderson/RayTracing/blob/master/Rapport.pdf)
+
+Features:
 - Simple Conccurency
 - Loading of .OBJ files
 - Displays objects using swing and can save screenshots.
@@ -13,3 +16,5 @@ Uses the Apache commons math library
 
 
 ### Pictures
+
+

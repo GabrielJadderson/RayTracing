@@ -1,2 +1,1 @@
-# RayTracing
-raytracing experiment
+#ray Tracer
